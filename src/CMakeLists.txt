@@ -1,6 +1,4 @@
-project(SunMath)
-set(CMAKE_CXX_STANDARD 11)
+file(GLOB_RECURSE SRC_HEADER *.hpp)
 
-#set(SRC_FILES ../include/Vec2.hpp)
-#
-#add_library(SunMath ${SRC_FILES})
+add_library(SunMath INTERFACE) 
+target_include_directories(SunMath  INTERFACE ./)
